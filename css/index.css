@@ -1,0 +1,29 @@
+
+body
+{
+    background-color: lightblue; 
+    color: red;
+}
+       section{
+        margin-bottom: 100px;
+       }
+
+       h1{
+        font-size: medium;
+        font-weight: 200;
+        color: black;
+        font-style: italic;
+       }
+
+       h2{
+        font-size: medium;
+        font-weight: 200;
+        color: black;
+        font-style: normal;
+       }
+
+       p{
+        font-family: Times New Roman; 
+       }
+
+    
