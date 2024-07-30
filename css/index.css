@@ -15,11 +15,38 @@ body
         font-style: italic;
        }
 
-       h2{
+       h3{
         font-size: medium;
         font-weight: 200;
-        color: black;
+        color: yellow;
         font-style: normal;
+       }
+
+       h4{
+        font-style:inherit;
+       }
+
+       a{
+        color: brown;
+       }
+
+       
+       a:visited{
+        color: black;
+                        
+       }
+
+       a:active{
+        color: blue;
+       }
+
+
+       
+
+       main
+       {
+        background-color: beige;
+        
        }
 
        p{
