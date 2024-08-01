@@ -1,0 +1,79 @@
+
+body
+{
+    background-color: lightblue; 
+    color: red;
+}
+       section{
+        margin-bottom: 150px;
+       }
+
+       h1{
+        font-size: 2em;
+        font-weight: 200;
+        color: black;
+        font-style: italic;
+       }
+
+       h3{
+        font-size: medium;
+        font-weight: 200;
+        color: yellow;
+        font-style: normal;
+       }
+
+       h4{
+        font-style:inherit;
+       }
+
+       #introduction{
+        font-size: 1.5em;
+       }
+
+       p{
+        font-family: Times New Roman; 
+       }
+
+      #certification1{
+        color: brown;
+        background-color: bisque;
+      }
+
+      #certification2{
+        color: coral;
+        background-color: darkblue;
+      }
+
+      #certification3{
+        color: darkgrey;
+        background-color: black;
+      }
+
+      #Project{
+         color: darkgreen;
+         background-color: yellow;
+      }
+
+      #linkedin{
+        color: black;
+      }
+
+      #gmail{
+        color: indigo;
+      }
+
+      #instagram{
+        color: fuchsia;
+      }
+
+      a:visited{
+        color: black;
+                        
+       }
+
+       a:active{
+        color: blue;
+       }
+
+       
+       
