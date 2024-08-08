@@ -4,6 +4,9 @@ body
     background-color: lightblue; 
     color: red;
 }
+header{
+    position:sticky;
+}
        section{
         margin-bottom: 150px;
        }
@@ -23,7 +26,14 @@ body
        }
 
        h4{
-        font-style:inherit;
+        font: size 28px;
+       }
+
+       .links{
+        width:500px;
+        display:flex;
+        justify-content: space-evenly;
+
        }
 
        #introduction{
@@ -34,6 +44,20 @@ body
         font-family: Times New Roman; 
        }
 
+       .columns {
+        width:500px;
+        display:flex;
+        justify-content: space-evenly;
+        
+       }
+
+       .column {
+          margin:20px ;
+       }
+
+      
+       
+/*
       #certification1{
         color: brown;
         background-color: bisque;
@@ -52,7 +76,7 @@ body
       #Project{
          color: darkgreen;
          background-color: yellow;
-      }
+      } */
 
       #linkedin{
         color: black;
