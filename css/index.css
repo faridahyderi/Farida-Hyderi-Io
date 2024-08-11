@@ -23,7 +23,7 @@ change the padding or margin (1st change) and background color (2nd change) of y
  and change the font size (1st change) 
 and font style (2nd change) of your name at the top of your page (3rd element)*/
 
-@media (min-width:600px){
+@media (max-width:600px){
 body{
     background-color:burlywood;
 }
@@ -44,8 +44,8 @@ h1{
 }
 }
 
-/*Larger Screens tablets */
-@media (min-width:992px){
+/*Larger Screens tablets 
+@media (max-width:992px){
     body{
         background-color:beige;
     }
@@ -64,10 +64,10 @@ h1{
         font-size: large;
         font-style:normal;
     }
-    }
+    }*/
 
     /*laptops,desktops*/
-    @media (min-width:1200px){
+    @media (max-width:1200px){
         body{
             background-color:coral;
         }
