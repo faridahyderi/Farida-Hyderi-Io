@@ -117,7 +117,7 @@ a{
        .links{
         width:500px;
         display:grid;
-        gap:50px 100px;
+        gap:2em 1em;
         list-style-type: none;
 
        }
