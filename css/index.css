@@ -44,27 +44,6 @@ h1{
 }
 }
 
-/*Larger Screens tablets 
-@media (max-width:992px){
-    body{
-        background-color:beige;
-    }
-    .navigation{
-        background-color:darkgrey;
-    }
-    a{
-        font-size: 1.5em;
-        text-decoration: none;
-    }
-    h1,h2,h3{
-        color:blueviolet;
-        margin-bottom:auto;
-    }
-    h1{
-        font-size: large;
-        font-style:normal;
-    }
-    }*/
 
     /*laptops,desktops*/
     @media (max-width:1200px){
