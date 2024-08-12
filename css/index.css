@@ -12,9 +12,63 @@ header{
 .navlinks{
     width:500px;
     display:flex;
+    gap: 50px;
+    text-decoration: none;
     justify-content: space-evenly;
     list-style-type: none;
 }
+/*Smaller Screens mobiles
+change the font size (1st change) and color (2nd change) of your headers (1st element), 
+change the padding or margin (1st change) and background color (2nd change) of your unordered lists (2nd element),
+ and change the font size (1st change) 
+and font style (2nd change) of your name at the top of your page (3rd element)*/
+
+@media (0px<= width <= 600px){
+body{
+    background-color:burlywood;
+}
+.navigation{
+    background-color: yellowgreen;
+}
+a{
+    font-size: 1em;
+    text-decoration: none;
+}
+h1,h2,h3{
+    color:blue;
+    margin-bottom:auto;
+}
+h1{
+    font-size: x-large;
+    font-style: italic;
+}
+}
+
+/*Tablets*/
+@media (600px <= width <=920px){
+    body{
+        background-color:beige;
+    }
+    .navigation{
+        background-color:darkgrey;
+    }
+    a{
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    h1,h2,h3{
+        color:blueviolet;
+        margin-bottom:auto;
+    }
+    h1{
+        font-size: large;
+        font-style:normal;
+    }
+}
+
+
+
+
 a{
     color:black;
 }
@@ -42,8 +96,8 @@ a{
 
        .links{
         width:500px;
-        display:flex;
-        justify-content: space-evenly;
+        display:grid;
+        gap:2em 1em;
         list-style-type: none;
 
        }
