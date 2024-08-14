@@ -2,8 +2,6 @@
 
 const footer1 = document.createElement('footer');
 footer1.className ='Footer';
-/*footer1.innerHTML = 'This is the Footer';
-document.body.append(footer1);*/
 document.body.appendChild(footer1);
 
 /*Creating today variable*/
