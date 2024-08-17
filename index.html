@@ -88,6 +88,39 @@
        <h2> Projects</h2>
     </section>
     
+    <!--Inside the new <section> element, create a level-two heading that says "Leave a Message"-->
+      <section>
+        <h2>"Leave a Message</h2>
+        <!--After the heading, create an HTML <form> element with a name attribute that equals 
+          "leave_message"-->
+          <form name="leave_message">
+            <!--<input> element with attributes: type "text", name "usersName", and required true-->
+            <label for = "usersName">Users Name:</label>
+            <input type="text" name="usersName" required="true"><br><br>
+
+            <!--<input> element with attributes: type "email", name "usersEmail", and required true-->
+            <label for = "usersEmail">Users Email:</label>
+            <input type="email" name="usersEmail", required="true"><br><br>
+
+            <!--<textarea> element with attributes: name "usersMessage" and required true-->
+              <label for = "usersMessage">Users Message:</label>
+              <input type="text" name="usersMessage" required="true"><br><br> 
+
+            <!--<button> element that says "Submit" and has type attribute equal to "submit"--> 
+              <button type="submit" id="submit">Submit </button>
+
+          </form>
+        </section>
+
+        <!--After the <section> element from the previous step, create a new <section> 
+          element with an id of "messages"-->
+        <section id="messages">
+          <!-- Inside that element, create a level-two heading that says "Messages"-->
+          <h2>Messages</h2>
+          <ul>
+
+          </ul>
+        </section>
     <script src = "js/index.js" ></script>
   </body>
 </html>

@@ -46,3 +46,81 @@ for(let i=0 ;i< skills.length ; i++ )
       skillsList.appendChild(skill);
     }
 
+    /*Create a variable named messageForm that uses "DOM Selection" to select the 
+    "leave_message" form by name attribute*/
+
+    const messageForm = document.querySelector('form');
+
+    /*Add an event listener to the messageForm element that handles the "submit" event
+    Inside the callback function for your event listener, create three new variables 
+    (one for each of the three form fields) and retrieve the value from the event*/
+    
+    messageForm.addEventListener('submit',event=>{
+        event.preventDefault();                  
+        const username = event.target.usersName.value;
+        const email= event.target.usersEmail.value;
+        const usermessage=event.target.usersMessage.value;
+        console.log("username is ", username);
+        console.log("Email is ", email);
+        console.log("user Message is ", usermessage);
+        
+        /*Create a variable named messageSection and use "DOM Selection" to select the 
+        #messages section by id*/
+        const messageSection=document.getElementById('messages');
+
+        /*Create a variable named messageList and use "DOM Selection"
+         to query the messageSection (instead of the entire document) to find the <ul> element*/
+         const messageList = messageSection.querySelector('ul');
+
+         /*Create a variable named newMessage that makes a new list item (li) element*/
+         const newMessage = document.createElement('li');
+         
+
+         /*On the next line, set the inner HTML of your newMessage element with the following 
+         information:<a> element that displays the "usersName" and is a clickable link to the 
+         "usersEmail" (hint: use the mailto: prefix) <span> element that displays the "usersMessage"*/
+         const alink =document.createElement('a');
+         alink.innerHTML=`${username} `;
+         alink.href=`mail to: https://${email} `;
+
+         const spanElement = document.createElement('span');
+         spanElement.innerHTML = ` ${usermessage}`;
+
+         
+         messageList.append(newMessage);
+         
+         newMessage.appendChild(alink);
+         newMessage.appendChild(document.createElement('br'));
+         
+         newMessage.appendChild(spanElement);
+         newMessage.appendChild(document.createElement('br'));
+
+         /*Create a variable named removeButton that makes a new <button> element*/
+         const removeButton = document.createElement('button');
+
+         /*Set the inner text to "remove" Set the type attribute to "button"*/
+         removeButton.innerHTML = "remove";
+         removeButton.type="button" ;
+
+         /*Add an event listener to the removeButton element that handles the "click" event*/
+      
+          
+         removeButton.addEventListener('click',event =>{
+          /*Inside the callback function, create a variable named entry that finds the 
+          button's parent element using DOM Traversal*/
+          const entry = event.target.parentElement;
+
+          /*Remove the entry element from the DOM*/
+          entry.remove();
+
+          /*Append the removeButton to the newMessage element*/
+          //removeButton.appendChild(newMessage);
+         
+         });
+          /*Append the removeButton to the newMessage element*/
+          newMessage.appendChild(removeButton);
+         
+        messageForm.reset();
+    }
+    
+);
