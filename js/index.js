@@ -81,7 +81,7 @@ for(let i=0 ;i< skills.length ; i++ )
          "usersEmail" (hint: use the mailto: prefix) <span> element that displays the "usersMessage"*/
          const alink =document.createElement('a');
          alink.innerHTML=`${username} `;
-         alink.href=`mail to: https://${email} `;
+         alink.href=`mailto:${email}`;
 
          const spanElement = document.createElement('span');
          spanElement.innerHTML = ` ${usermessage}`;
@@ -91,7 +91,7 @@ for(let i=0 ;i< skills.length ; i++ )
          
          newMessage.appendChild(alink);
          newMessage.appendChild(document.createElement('br'));
-         
+
          newMessage.appendChild(spanElement);
          newMessage.appendChild(document.createElement('br'));
 
@@ -113,8 +113,7 @@ for(let i=0 ;i< skills.length ; i++ )
           /*Remove the entry element from the DOM*/
           entry.remove();
 
-          /*Append the removeButton to the newMessage element*/
-          //removeButton.appendChild(newMessage);
+          
          
          });
           /*Append the removeButton to the newMessage element*/
