@@ -123,3 +123,47 @@ for(let i=0 ;i< skills.length ; i++ )
     }
     
 );
+
+/*Creating fetch, handle JSON data, Handling errors*/
+fetch('https://api.github.com/users/faridahyderi/repos')
+.then(res => {
+  return res.text();
+})
+.then (text => {
+      const data=JSON.parse(text);
+      console.log(data);
+      //Display Repositories in list
+const projectSection = document.getElementById('Projects');
+
+const projectList = projectSection.querySelector('ul');
+
+for(let i=0 ;i< data.length ; i++ )
+  {
+   console.log("inside if");
+    const projectli = document.createElement('li');
+    console.log(data[i].full_name);
+    projectli.innerHTML = data[i].name;
+    projectList.appendChild(projectli);
+    //skillsList.appendChild(projectli);
+  }
+         /* data.forEach(repo =>{
+          const repositories=`<li> ${repo.name} </li>`;
+          //console.log(repositories);
+          document.getElementById('projectul').insertAdjacentHTML('beforeend',repositories);
+          
+ })*/
+ })
+.catch(error => {
+  console.log(error)});
+
+/*Display Repositories in list
+const projectSection = document.getElementById('Projects');
+
+const projectList = projectSection.querySelector('projectul');
+
+for(let i=0 ;i< skills.length ; i++ )
+  {
+    const skill = document.createElement('li')
+    skill.innerHTML = skills[i];
+    skillsList.appendChild(skill);
+  }*/
