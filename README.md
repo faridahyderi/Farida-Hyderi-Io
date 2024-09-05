@@ -2,7 +2,7 @@
 Intro to Programming course with Code the Dream
 
 
-
+[My portfolio](https://github.com/faridahyderi/Farida-Hyderi-Io)
 1. Clone this Repository
 2. It has 2 folders and 1 file
 3. index.html --- open this file in the browser to learn more about me
