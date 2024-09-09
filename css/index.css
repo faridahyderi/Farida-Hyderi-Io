@@ -2,7 +2,7 @@
 body
 {
     background-color: lightblue; 
-    color: red;
+    color: gray;
 }
 header{
     position:sticky;
@@ -16,6 +16,7 @@ header{
     text-decoration: none;
     justify-content: space-evenly;
     list-style-type: none;
+    
 }
 /*Smaller Screens mobiles
 change the font size (1st change) and color (2nd change) of your headers (1st element), 
@@ -70,7 +71,7 @@ h1{
 
 
 a{
-    color:black;
+    color:orangered;
 }
 
        section{
